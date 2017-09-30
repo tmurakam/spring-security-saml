@@ -1,6 +1,8 @@
 description = "Spring Security SAML v2 library"
 
 dependencies {
+	compile "org.springframework:spring-context:$springVersion"
+	compile "org.springframework:spring-web:$springVersion"
 	compile "org.springframework.security:spring-security-core:$springSecurityVersion",
 		"org.springframework.security:spring-security-config:$springSecurityVersion",
 		"org.slf4j:slf4j-api:$slf4jVersion"	
