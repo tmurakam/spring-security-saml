@@ -17,7 +17,7 @@ configure(allprojects) { project ->
 
 	ext.slf4jVersion = "1.6.3"
 	ext.springVersion = "5.0.0.RELEASE"
-	ext.springSecurityVersion = "4.2.3.RELEASE"
+	ext.springSecurityVersion = "5.0.0.M4"
 	ext.gradleScriptDir = "${rootProject.projectDir}/gradle"
 
 	apply plugin: "propdeps"
@@ -287,4 +287,12 @@ configure(rootProject) {
 		}
 	}
 
+}
+
+subprojects {
+	repositories {
+		maven {
+			url 'https://repo.spring.io/libs-milestone'
+		}
+	}
 }
